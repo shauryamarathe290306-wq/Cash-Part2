@@ -42,9 +42,9 @@ def convert_currency(from_currency: str, to_currency: str, amount: float):
     converted_amount = amount * rates[to_currency]
 
     return {
-        "from": from_currency.upper(),
-        "to": to_currency,
-        "amount": amount,
-        "rate": rates[to_currency],
-        "result": round(converted_amount, 2)
-    }
+    "from_currency": from_currency.upper(),
+    "to_currency": to_currency,
+    "amount": amount,
+    "rate": rates[to_currency],
+    "result": round(converted_amount, 2)
+}

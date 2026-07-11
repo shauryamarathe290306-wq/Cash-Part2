@@ -1,25 +1,37 @@
 import { useState } from "react";
+import SearchDropdown from "./components/SearchDropdown";
 
 function App() {
   const [amount, setAmount] = useState("");
-  const [rate, setRate] = useState("");
+  const [fromCurrency, setFromCurrency] = useState("USD");
+  const [toCurrency, setToCurrency] = useState("INR");
   const [result, setResult] = useState("");
 
   const handleConvert = async () => {
-    const response = await fetch("http://127.0.0.1:8000/currencies/convert", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        amount: Number(amount),
-        rate: Number(rate),
-      }),
-    });
+
+    console.log({
+  from_currency: fromCurrency,
+  to_currency: toCurrency,
+  amount: amount,
+});
+    const response = await fetch(
+      "http://127.0.0.1:8000/currencies/convert",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from_currency: fromCurrency,
+          to_currency: toCurrency,
+          amount: Number(amount),
+        }),
+      }
+    );
 
     const data = await response.json();
 
-    setResult(data.converted_amount);
+    setResult(data.result);
   };
 
   return (
@@ -42,12 +54,11 @@ function App() {
       <br />
       <br />
 
-      <input
-        type="number"
-        placeholder="Exchange Rate"
-        value={rate}
-        onChange={(e) => setRate(e.target.value)}
-      />
+      <SearchDropdown label="From Currency" />
+
+<br />
+
+<SearchDropdown label="To Currency" />
 
       <br />
       <br />

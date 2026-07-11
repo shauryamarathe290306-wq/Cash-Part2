@@ -1,30 +1,28 @@
 from fastapi import APIRouter
-
-from app.models.convert import ConvertRequest
-from app.services.converter import convert_currency
+from app.models.currency import ConvertRequest, ConvertResponse
+from app.services.country_service import (
+    get_country_list,
+    search_countries
+)
+from app.services.exchange_service import convert_currency
 
 router = APIRouter(prefix="/currencies", tags=["Currencies"])
-
-currencies = [
-    {"code": "USD", "name": "United States Dollar"},
-    {"code": "INR", "name": "Indian Rupee"},
-    {"code": "EUR", "name": "Euro"},
-    {"code": "GBP", "name": "British Pound"},
-    {"code": "JPY", "name": "Japanese Yen"},
-]
 
 
 @router.get("/")
 def get_currencies():
-    return currencies
+    return get_country_list()
 
 
-@router.post("/convert")
+@router.get("/search")
+def search(query: str):
+    return search_countries(query)
+
+
+@router.post("/convert", response_model=ConvertResponse)
 def convert(data: ConvertRequest):
-    result = convert_currency(data.amount, data.rate)
-
-    return {
-        "amount": data.amount,
-        "rate": data.rate,
-        "converted_amount": result
-    }
+    return convert_currency(
+        data.from_currency,
+        data.to_currency,
+        data.amount
+    )

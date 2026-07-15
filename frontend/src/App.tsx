@@ -34,7 +34,7 @@ function App() {
       const data = await response.json();
 
       if (data.result !== undefined) {
-        setResult(data.result);
+        setResult(Number(data.result).toLocaleString("en-IN"));
       } else {
         alert(data.error);
       }
@@ -68,26 +68,61 @@ function App() {
       />
 
       <SearchDropdown
-        label="From Currency"
-        value={fromCurrency}
-        displayValue={fromDisplay}
-        onInputChange={setFromDisplay}
-        onSelect={(code, display) => {
-          setFromCurrency(code);
-          setFromDisplay(display);
-        }}
-      />
+  label="From Currency"
+  value={fromCurrency}
+  displayValue={fromDisplay}
+  onInputChange={setFromDisplay}
+  onSelect={(code, display) => {
+    setFromCurrency(code);
+    setFromDisplay(display);
+  }}
+/>
 
-      <SearchDropdown
-        label="To Currency"
-        value={toCurrency}
-        displayValue={toDisplay}
-        onInputChange={setToDisplay}
-        onSelect={(code, display) => {
-          setToCurrency(code);
-          setToDisplay(display);
-        }}
-      />
+<div
+  style={{
+    display: "flex",
+    justifyContent: "center",
+    margin: "15px 0",
+  }}
+>
+  <button
+    onClick={() => {
+      // Swap currency codes
+      const tempCode = fromCurrency;
+      setFromCurrency(toCurrency);
+      setToCurrency(tempCode);
+
+      // Swap display names
+      const tempDisplay = fromDisplay;
+      setFromDisplay(toDisplay);
+      setToDisplay(tempDisplay);
+    }}
+    style={{
+      width: "55px",
+      height: "55px",
+      borderRadius: "50%",
+      border: "none",
+      fontSize: "24px",
+      cursor: "pointer",
+      background: "#2b2b2b",
+      color: "white",
+      transition: "0.3s",
+    }}
+  >
+    ⇅
+  </button>
+</div>
+
+<SearchDropdown
+  label="To Currency"
+  value={toCurrency}
+  displayValue={toDisplay}
+  onInputChange={setToDisplay}
+  onSelect={(code, display) => {
+    setToCurrency(code);
+    setToDisplay(display);
+  }}
+/>
 
       <button
         onClick={handleConvert}
@@ -102,9 +137,48 @@ function App() {
         Convert
       </button>
 
-      <h2 style={{ marginTop: "20px" }}>
-        Result: {result}
-      </h2>
+      <div
+  style={{
+    marginTop: "30px",
+    padding: "20px",
+    background: "#222",
+    borderRadius: "12px",
+    textAlign: "center",
+    color: "white",
+    boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
+  }}
+>
+  <h3 style={{ marginBottom: "15px", color: "#4CAF50" }}>
+    ✅ Conversion Result
+  </h3>
+
+  <p
+    style={{
+      fontSize: "18px",
+      marginBottom: "10px",
+    }}
+  >
+    {amount} {fromCurrency}
+  </p>
+
+  <p
+    style={{
+      fontSize: "24px",
+      margin: "10px 0",
+    }}
+  >
+    ↓
+  </p>
+
+  <h2
+    style={{
+      fontSize: "30px",
+      margin: 0,
+    }}
+  >
+    {result} {toCurrency}
+  </h2>
+</div>
     </div>
   );
 }

@@ -25,6 +25,7 @@ function SearchDropdown({
     onSelect,
     onInputChange,
 }: Props) {
+    const [isOpen, setIsOpen] = useState(false);
     const [currencies, setCurrencies] = useState<Currency[]>([]);
     useEffect(() => {
     const fetchCurrencies = async () => {
@@ -71,48 +72,61 @@ function SearchDropdown({
         </label>
 
         <input
-        type="text"
-        placeholder="Search country or currency..."
-        value={displayValue}
-        onChange={(e) => onInputChange(e.target.value)}
-        style={{
-            width: "100%",
-            padding: "10px",
-            borderRadius: "8px",
-            border: "1px solid #ccc",
-            fontSize: "16px",
-        }}
-        />
+    type="text"
+    placeholder="Search country or currency..."
+    value={displayValue}
 
-        {displayValue.length > 0 && (
+    onFocus={() => setIsOpen(true)}
+
+    onChange={(e) => {
+    onInputChange(e.target.value);
+    setIsOpen(true);
+}}
+
+    style={{
+        width: "100%",
+        padding: "10px",
+        borderRadius: "8px",
+        border: "1px solid #ccc",
+        fontSize: "16px",
+    }}
+/>
+
+        {isOpen && (
         <div
             style={{
-            border: "1px solid #ccc",
-            borderRadius: "8px",
-            marginTop: "5px",
-            maxHeight: "220px",
-            overflowY: "auto",
-            background: "white",
-            position: "absolute",
-            width: "100%",
-            zIndex: 1000,
-            }}
+    border: "1px solid #444",
+    borderRadius: "10px",
+    marginTop: "5px",
+    maxHeight: "220px",
+    overflowY: "auto",
+    background: "#1f1f1f",
+    color: "white",
+    position: "absolute",
+    width: "100%",
+    zIndex: 1000,
+    boxShadow: "0 8px 20px rgba(0,0,0,0.4)",
+}}
         >
             {filteredCurrencies.length > 0 ? (
             filteredCurrencies.map((currency) => (
             <div
                 key={currency.code}
-                onClick={() =>
-                    onSelect(
-                    currency.code,
-                    `${currency.flag} ${currency.country}`
-                    )
-                }
-                style={{
-                    padding: "10px",
-                    cursor: "pointer",
-                    borderBottom: "1px solid #eee",
-                }}
+                onClick={() => {
+    onSelect(
+        currency.code,
+        `${currency.flag} ${currency.country}`
+    );
+
+    setIsOpen(false);
+}}
+style={{
+    padding: "12px",
+    cursor: "pointer",
+    borderBottom: "1px solid #333",
+    backgroundColor: "#1f1f1f",
+    color: "white",
+}}
                 >
                 <strong>
                 {currency.flag} {currency.country}
@@ -124,15 +138,22 @@ function SearchDropdown({
 
                 <br />
 
-                <small>{currency.code}</small>
+                <small
+    style={{
+        color: "#bdbdbd",
+    }}
+>
+    {currency.code}
+</small>
                 </div>
             ))
             ) : (
             <div
                 style={{
-                padding: "10px",
-                color: "#777",
-                }}
+    padding: "10px",
+    color: "white",
+    backgroundColor: "#1f1f1f",
+}}
             >
                 No matching country found
             </div>

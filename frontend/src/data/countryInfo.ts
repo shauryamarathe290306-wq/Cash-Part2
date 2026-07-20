@@ -1,71 +1,72 @@
 export const countryInfo: Record<string, any> = {
   INR: {
+    country: "India",
+    flag: "🇮🇳",
     capital: "New Delhi",
+    landmark: "🕌 Taj Mahal",
+    person: "Mahatma Gandhi",
     currency: "Indian Rupee",
     symbol: "₹",
-    landmark: "🕌 Taj Mahal",
-    famousPerson: "Mahatma Gandhi",
-    image:
-      "https://images.unsplash.com/photo-1524492412937-b28074a5d7da",
   },
 
-  "USD": {
+  USD: {
+    country: "United States",
+    flag: "🇺🇸",
     capital: "Washington D.C.",
+    landmark: "🗽 Statue of Liberty",
+    person: "Barack Obama",
     currency: "US Dollar",
     symbol: "$",
-    landmark: "🗽 Statue of Liberty",
-    famousPerson: "Barack Obama",
-    image:
-      "https://images.unsplash.com/photo-1496588152823-86ff7695e68f",
   },
 
-  CAD: {
-    capital: "Ottawa",
-    currency: "Canadian Dollar",
-    symbol: "C$",
-    landmark: "🍁 Niagara Falls",
-    famousPerson: "Justin Trudeau",
-    image:
-      "https://images.unsplash.com/photo-1503614472-8c93d56cd2a1",
+  GBP: {
+    country: "United Kingdom",
+    flag: "🇬🇧",
+    capital: "London",
+    landmark: "🏰 Big Ben",
+    person: "Queen Elizabeth II",
+    currency: "British Pound",
+    symbol: "£",
   },
 
-  AUD: {
-    capital: "Canberra",
-    currency: "Australian Dollar",
-    symbol: "A$",
-    landmark: "🎭 Sydney Opera House",
-    famousPerson: "Steve Irwin",
-    image:
-      "https://images.unsplash.com/photo-1506973035872-a4f23ef8e834",
+  EUR: {
+    country: "European Union",
+    flag: "🇪🇺",
+    capital: "Brussels",
+    landmark: "🏛 European Parliament",
+    person: "Ursula von der Leyen",
+    currency: "Euro",
+    symbol: "€",
   },
 
   JPY: {
+    country: "Japan",
+    flag: "🇯🇵",
     capital: "Tokyo",
+    landmark: "🗻 Mount Fuji",
+    person: "Hayao Miyazaki",
     currency: "Japanese Yen",
     symbol: "¥",
-    landmark: "🗻 Mount Fuji",
-    famousPerson: "Hayao Miyazaki",
-    image:
-      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e",
   },
 
-  
+  AUD: {
+    country: "Australia",
+    flag: "🇦🇺",
+    capital: "Canberra",
+    landmark: "🎭 Sydney Opera House",
+    person: "Steve Irwin",
+    currency: "Australian Dollar",
+    symbol: "A$",
+  },
 
-  
-  
-
-  
-  
-
-
-    CNY: {
-    country: "China",
-    flag: "🇨🇳",
-    capital: "Beijing",
-    landmark: "🧱 Great Wall of China",
-    person: "Xi Jinping",
-    currency: "Chinese Yuan",
-    symbol: "¥",
+  CAD: {
+    country: "Canada",
+    flag: "🇨🇦",
+    capital: "Ottawa",
+    landmark: "🍁 Niagara Falls",
+    person: "Justin Trudeau",
+    currency: "Canadian Dollar",
+    symbol: "C$",
   },
 
   CHF: {
@@ -76,6 +77,26 @@ export const countryInfo: Record<string, any> = {
     person: "Roger Federer",
     currency: "Swiss Franc",
     symbol: "CHF",
+  },
+
+  CNY: {
+    country: "China",
+    flag: "🇨🇳",
+    capital: "Beijing",
+    landmark: "🧱 Great Wall of China",
+    person: "Jack Ma",
+    currency: "Chinese Yuan",
+    symbol: "¥",
+  },
+
+  HKD: {
+    country: "Hong Kong",
+    flag: "🇭🇰",
+    capital: "Hong Kong",
+    landmark: "🌆 Victoria Peak",
+    person: "Bruce Lee",
+    currency: "Hong Kong Dollar",
+    symbol: "HK$",
   },
 
   SGD: {
@@ -98,14 +119,14 @@ export const countryInfo: Record<string, any> = {
     symbol: "NZ$",
   },
 
-  ZAR: {
-    country: "South Africa",
-    flag: "🇿🇦",
-    capital: "Pretoria",
-    landmark: "🏔️ Table Mountain",
-    person: "Nelson Mandela",
-    currency: "South African Rand",
-    symbol: "R",
+  AED: {
+    country: "United Arab Emirates",
+    flag: "🇦🇪",
+    capital: "Abu Dhabi",
+    landmark: "🏙️ Burj Khalifa",
+    person: "Sheikh Mohammed bin Rashid Al Maktoum",
+    currency: "UAE Dirham",
+    symbol: "د.إ",
   },
 
   SAR: {
@@ -113,52 +134,52 @@ export const countryInfo: Record<string, any> = {
     flag: "🇸🇦",
     capital: "Riyadh",
     landmark: "🕋 Masjid al-Haram",
-    person: "Crown Prince Mohammed bin Salman",
+    person: "Mohammed bin Salman",
     currency: "Saudi Riyal",
     symbol: "﷼",
   },
 
-  KRW: {
-    country: "South Korea",
-    flag: "🇰🇷",
-    capital: "Seoul",
-    landmark: "🏯 Gyeongbokgung Palace",
-    person: "BTS",
-    currency: "South Korean Won",
-    symbol: "₩",
+  QAR: {
+    country: "Qatar",
+    flag: "🇶🇦",
+    capital: "Doha",
+    landmark: "🏛 Museum of Islamic Art",
+    person: "Tamim bin Hamad Al Thani",
+    currency: "Qatari Riyal",
+    symbol: "ر.ق",
   },
 
-  THB: {
-    country: "Thailand",
-    flag: "🇹🇭",
-    capital: "Bangkok",
-    landmark: "🛕 Wat Arun",
-    person: "Lisa (BLACKPINK)",
-    currency: "Thai Baht",
-    symbol: "฿",
+  KWD: {
+    country: "Kuwait",
+    flag: "🇰🇼",
+    capital: "Kuwait City",
+    landmark: "🗼 Kuwait Towers",
+    person: "Sabah Al-Ahmad Al-Sabah",
+    currency: "Kuwaiti Dinar",
+    symbol: "د.ك",
   },
 
-  MYR: {
-    country: "Malaysia",
-    flag: "🇲🇾",
-    capital: "Kuala Lumpur",
-    landmark: "🏙️ Petronas Towers",
-    person: "Michelle Yeoh",
-    currency: "Malaysian Ringgit",
-    symbol: "RM",
+  BHD: {
+    country: "Bahrain",
+    flag: "🇧🇭",
+    capital: "Manama",
+    landmark: "🏰 Bahrain Fort",
+    person: "Hamad bin Isa Al Khalifa",
+    currency: "Bahraini Dinar",
+    symbol: ".د.ب",
   },
 
-  BRL: {
-    country: "Brazil",
-    flag: "🇧🇷",
-    capital: "Brasília",
-    landmark: "🗿 Christ the Redeemer",
-    person: "Pelé",
-    currency: "Brazilian Real",
-    symbol: "R$",
+  OMR: {
+    country: "Oman",
+    flag: "🇴🇲",
+    capital: "Muscat",
+    landmark: "🕌 Sultan Qaboos Grand Mosque",
+    person: "Sultan Qaboos",
+    currency: "Omani Rial",
+    symbol: "ر.ع.",
   },
 
-  PKR: {
+    PKR: {
     country: "Pakistan",
     flag: "🇵🇰",
     capital: "Islamabad",
@@ -192,7 +213,7 @@ export const countryInfo: Record<string, any> = {
     country: "Sri Lanka",
     flag: "🇱🇰",
     capital: "Sri Jayawardenepura Kotte",
-    landmark: "🦁 Sigiriya Rock Fortress",
+    landmark: "🦁 Sigiriya",
     person: "Kumar Sangakkara",
     currency: "Sri Lankan Rupee",
     symbol: "Rs",
@@ -208,14 +229,34 @@ export const countryInfo: Record<string, any> = {
     symbol: "Rp",
   },
 
-  VND: {
-    country: "Vietnam",
-    flag: "🇻🇳",
-    capital: "Hanoi",
-    landmark: "⛰️ Ha Long Bay",
-    person: "Ho Chi Minh",
-    currency: "Vietnamese Dong",
-    symbol: "₫",
+  MYR: {
+    country: "Malaysia",
+    flag: "🇲🇾",
+    capital: "Kuala Lumpur",
+    landmark: "🏙️ Petronas Towers",
+    person: "Michelle Yeoh",
+    currency: "Malaysian Ringgit",
+    symbol: "RM",
+  },
+
+  THB: {
+    country: "Thailand",
+    flag: "🇹🇭",
+    capital: "Bangkok",
+    landmark: "🛕 Wat Arun",
+    person: "Lisa (BLACKPINK)",
+    currency: "Thai Baht",
+    symbol: "฿",
+  },
+
+  KRW: {
+    country: "South Korea",
+    flag: "🇰🇷",
+    capital: "Seoul",
+    landmark: "🏯 Gyeongbokgung Palace",
+    person: "BTS",
+    currency: "South Korean Won",
+    symbol: "₩",
   },
 
   PHP: {
@@ -228,6 +269,16 @@ export const countryInfo: Record<string, any> = {
     symbol: "₱",
   },
 
+  VND: {
+    country: "Vietnam",
+    flag: "🇻🇳",
+    capital: "Hanoi",
+    landmark: "⛰️ Ha Long Bay",
+    person: "Ho Chi Minh",
+    currency: "Vietnamese Dong",
+    symbol: "₫",
+  },
+
   TRY: {
     country: "Turkey",
     flag: "🇹🇷",
@@ -236,16 +287,6 @@ export const countryInfo: Record<string, any> = {
     person: "Mustafa Kemal Atatürk",
     currency: "Turkish Lira",
     symbol: "₺",
-  },
-
-  MXN: {
-    country: "Mexico",
-    flag: "🇲🇽",
-    capital: "Mexico City",
-    landmark: "🏛️ Chichén Itzá",
-    person: "Frida Kahlo",
-    currency: "Mexican Peso",
-    symbol: "$",
   },
 
   RUB: {
@@ -258,44 +299,36 @@ export const countryInfo: Record<string, any> = {
     symbol: "₽",
   },
 
-    ARS: {
-    country: "Argentina",
-    flag: "🇦🇷",
-    capital: "Buenos Aires",
-    landmark: "💃 Obelisk",
-    person: "Lionel Messi",
-    currency: "Argentine Peso",
+  BRL: {
+    country: "Brazil",
+    flag: "🇧🇷",
+    capital: "Brasília",
+    landmark: "🗿 Christ the Redeemer",
+    person: "Pelé",
+    currency: "Brazilian Real",
+    symbol: "R$",
+  },
+
+  // batch2
+
+  MXN: {
+    country: "Mexico",
+    flag: "🇲🇽",
+    capital: "Mexico City",
+    landmark: "🏛️ Chichén Itzá",
+    person: "Frida Kahlo",
+    currency: "Mexican Peso",
     symbol: "$",
   },
 
-  CLP: {
-    country: "Chile",
-    flag: "🇨🇱",
-    capital: "Santiago",
-    landmark: "🏔️ Torres del Paine",
-    person: "Pablo Neruda",
-    currency: "Chilean Peso",
-    symbol: "$",
-  },
-
-  COP: {
-    country: "Colombia",
-    flag: "🇨🇴",
-    capital: "Bogotá",
-    landmark: "⛰️ Monserrate",
-    person: "Shakira",
-    currency: "Colombian Peso",
-    symbol: "$",
-  },
-
-  PEN: {
-    country: "Peru",
-    flag: "🇵🇪",
-    capital: "Lima",
-    landmark: "🏛️ Machu Picchu",
-    person: "Mario Vargas Llosa",
-    currency: "Peruvian Sol",
-    symbol: "S/",
+  ZAR: {
+    country: "South Africa",
+    flag: "🇿🇦",
+    capital: "Pretoria",
+    landmark: "🏔️ Table Mountain",
+    person: "Nelson Mandela",
+    currency: "South African Rand",
+    symbol: "R",
   },
 
   EGP: {
@@ -348,722 +381,239 @@ export const countryInfo: Record<string, any> = {
     symbol: "MAD",
   },
 
-    NOK: {
-    country: "Norway",
-    flag: "🇳🇴",
-    capital: "Oslo",
-    landmark: "🗻 Geirangerfjord",
-    person: "Erling Haaland",
-    currency: "Norwegian Krone",
-    symbol: "kr",
-  },
-
-  SEK: {
-    country: "Sweden",
-    flag: "🇸🇪",
-    capital: "Stockholm",
-    landmark: "🏰 Gamla Stan",
-    person: "Alfred Nobel",
-    currency: "Swedish Krona",
-    symbol: "kr",
-  },
-
-  DKK: {
-    country: "Denmark",
-    flag: "🇩🇰",
-    capital: "Copenhagen",
-    landmark: "🧜 The Little Mermaid",
-    person: "Hans Christian Andersen",
-    currency: "Danish Krone",
-    symbol: "kr",
-  },
-
-  PLN: {
-    country: "Poland",
-    flag: "🇵🇱",
-    capital: "Warsaw",
-    landmark: "🏰 Wawel Castle",
-    person: "Marie Curie",
-    currency: "Polish Zloty",
-    symbol: "zł",
-  },
-
+  // batch3
   CZK: {
-    country: "Czech Republic",
-    flag: "🇨🇿",
-    capital: "Prague",
-    landmark: "🌉 Charles Bridge",
-    person: "Franz Kafka",
-    currency: "Czech Koruna",
-    symbol: "Kč",
-  },
-
-  HUF: {
-    country: "Hungary",
-    flag: "🇭🇺",
-    capital: "Budapest",
-    landmark: "🏛️ Hungarian Parliament",
-    person: "Ferenc Puskás",
-    currency: "Hungarian Forint",
-    symbol: "Ft",
-  },
-
-  RON: {
-    country: "Romania",
-    flag: "🇷🇴",
-    capital: "Bucharest",
-    landmark: "🏰 Bran Castle",
-    person: "Nadia Comăneci",
-    currency: "Romanian Leu",
-    symbol: "lei",
-  },
-
-  BGN: {
-    country: "Bulgaria",
-    flag: "🇧🇬",
-    capital: "Sofia",
-    landmark: "⛪ Alexander Nevsky Cathedral",
-    person: "Hristo Stoichkov",
-    currency: "Bulgarian Lev",
-    symbol: "лв",
-  },
-
-  UAH: {
-    country: "Ukraine",
-    flag: "🇺🇦",
-    capital: "Kyiv",
-    landmark: "⛪ Saint Sophia Cathedral",
-    person: "Volodymyr Zelenskyy",
-    currency: "Ukrainian Hryvnia",
-    symbol: "₴",
-  },
-
-  ISK: {
-    country: "Iceland",
-    flag: "🇮🇸",
-    capital: "Reykjavík",
-    landmark: "🌋 Blue Lagoon",
-    person: "Björk",
-    currency: "Icelandic Króna",
-    symbol: "kr",
-  },
-    KZT: {
-    country: "Kazakhstan",
-    flag: "🇰🇿",
-    capital: "Astana",
-    landmark: "🗼 Bayterek Tower",
-    person: "Gennady Golovkin",
-    currency: "Kazakhstani Tenge",
-    symbol: "₸",
-  },
-
-  UZS: {
-    country: "Uzbekistan",
-    flag: "🇺🇿",
-    capital: "Tashkent",
-    landmark: "🕌 Registan Square",
-    person: "Islam Karimov",
-    currency: "Uzbekistani Som",
-    symbol: "so'm",
-  },
-
-  TJS: {
-    country: "Tajikistan",
-    flag: "🇹🇯",
-    capital: "Dushanbe",
-    landmark: "🏔️ Ismoil Somoni Monument",
-    person: "Emomali Rahmon",
-    currency: "Tajikistani Somoni",
-    symbol: "ЅМ",
-  },
-
-  TMT: {
-    country: "Turkmenistan",
-    flag: "🇹🇲",
-    capital: "Ashgabat",
-    landmark: "🏛️ Independence Monument",
-    person: "Gurbanguly Berdimuhamedow",
-    currency: "Turkmenistani Manat",
-    symbol: "m",
-  },
-
-  KGS: {
-    country: "Kyrgyzstan",
-    flag: "🇰🇬",
-    capital: "Bishkek",
-    landmark: "⛰️ Ala-Too Square",
-    person: "Chingiz Aitmatov",
-    currency: "Kyrgyzstani Som",
-    symbol: "с",
-  },
-
-  AMD: {
-    country: "Armenia",
-    flag: "🇦🇲",
-    capital: "Yerevan",
-    landmark: "⛪ Mount Ararat",
-    person: "Serj Tankian",
-    currency: "Armenian Dram",
-    symbol: "֏",
-  },
-
-  GEL: {
-    country: "Georgia",
-    flag: "🇬🇪",
-    capital: "Tbilisi",
-    landmark: "🏰 Narikala Fortress",
-    person: "Nino Burjanadze",
-    currency: "Georgian Lari",
-    symbol: "₾",
-  },
-
-  AZN: {
-    country: "Azerbaijan",
-    flag: "🇦🇿",
-    capital: "Baku",
-    landmark: "🔥 Flame Towers",
-    person: "Garry Kasparov",
-    currency: "Azerbaijani Manat",
-    symbol: "₼",
-  },
-
-  MDL: {
-    country: "Moldova",
-    flag: "🇲🇩",
-    capital: "Chișinău",
-    landmark: "🍇 Cricova Winery",
-    person: "Nicolae Testemițanu",
-    currency: "Moldovan Leu",
-    symbol: "L",
-  },
-
-  BYN: {
-    country: "Belarus",
-    flag: "🇧🇾",
-    capital: "Minsk",
-    landmark: "🏛️ Independence Square",
-    person: "Aryna Sabalenka",
-    currency: "Belarusian Ruble",
-    symbol: "Br",
-  },
-
-    ETB: {
-    country: "Ethiopia",
-    flag: "🇪🇹",
-    capital: "Addis Ababa",
-    landmark: "⛪ Lalibela Churches",
-    person: "Abiy Ahmed",
-    currency: "Ethiopian Birr",
-    symbol: "Br",
-  },
-
-      DJF: {
-    country: "Djibouti",
-    flag: "🇩🇯",
-    capital: "Djibouti",
-    landmark: "🌊 Lake Assal",
-    person: "Ismaïl Omar Guelleh",
-    currency: "Djiboutian Franc",
-    symbol: "Fdj",
-  },
-
-  TZS: {
-    country: "Tanzania",
-    flag: "🇹🇿",
-    capital: "Dodoma",
-    landmark: "🏔️ Mount Kilimanjaro",
-    person: "Julius Nyerere",
-    currency: "Tanzanian Shilling",
-    symbol: "TSh",
-  },
-
-  UGX: {
-    country: "Uganda",
-    flag: "🇺🇬",
-    capital: "Kampala",
-    landmark: "🦍 Bwindi National Park",
-    person: "Yoweri Museveni",
-    currency: "Ugandan Shilling",
-    symbol: "USh",
-  },
-
-  RWF: {
-    country: "Rwanda",
-    flag: "🇷🇼",
-    capital: "Kigali",
-    landmark: "🦍 Volcanoes National Park",
-    person: "Paul Kagame",
-    currency: "Rwandan Franc",
-    symbol: "RF",
-  },
-
-  ZMW: {
-    country: "Zambia",
-    flag: "🇿🇲",
-    capital: "Lusaka",
-    landmark: "🌊 Victoria Falls",
-    person: "Kenneth Kaunda",
-    currency: "Zambian Kwacha",
-    symbol: "ZK",
-  },
-
-  BWP: {
-    country: "Botswana",
-    flag: "🇧🇼",
-    capital: "Gaborone",
-    landmark: "🐘 Okavango Delta",
-    person: "Seretse Khama",
-    currency: "Botswana Pula",
-    symbol: "P",
-  },
-
-  NAD: {
-    country: "Namibia",
-    flag: "🇳🇦",
-    capital: "Windhoek",
-    landmark: "🏜️ Sossusvlei",
-    person: "Sam Nujoma",
-    currency: "Namibian Dollar",
-    symbol: "N$",
-  },
-
-  MZN: {
-    country: "Mozambique",
-    flag: "🇲🇿",
-    capital: "Maputo",
-    landmark: "🏝️ Bazaruto Archipelago",
-    person: "Samora Machel",
-    currency: "Mozambican Metical",
-    symbol: "MT",
-  },
-
-  AOA: {
-    country: "Angola",
-    flag: "🇦🇴",
-    capital: "Luanda",
-    landmark: "🌊 Kalandula Falls",
-    person: "Agostinho Neto",
-    currency: "Angolan Kwanza",
-    symbol: "Kz",
-  },
-
-    CDF: {
-    country: "Democratic Republic of the Congo",
-    flag: "🇨🇩",
-    capital: "Kinshasa",
-    landmark: "🌋 Virunga National Park",
-    person: "Patrice Lumumba",
-    currency: "Congolese Franc",
-    symbol: "FC",
-  },
-
-  XAF: {
-    country: "Central African States",
-    flag: "🇨🇲",
-    capital: "Yaoundé",
-    landmark: "🌳 Dja Faunal Reserve",
-    person: "Paul Biya",
-    currency: "Central African CFA Franc",
-    symbol: "FCFA",
-  },
-
-  XOF: {
-    country: "West African States",
-    flag: "🇸🇳",
-    capital: "Dakar",
-    landmark: "🗽 African Renaissance Monument",
-    person: "Léopold Sédar Senghor",
-    currency: "West African CFA Franc",
-    symbol: "CFA",
-  },
-
-  GNF: {
-    country: "Guinea",
-    flag: "🇬🇳",
-    capital: "Conakry",
-    landmark: "⛰️ Mount Nimba",
-    person: "Ahmed Sékou Touré",
-    currency: "Guinean Franc",
-    symbol: "FG",
-  },
-
-  SLL: {
-    country: "Sierra Leone",
-    flag: "🇸🇱",
-    capital: "Freetown",
-    landmark: "🏖️ Lumley Beach",
-    person: "Ahmad Tejan Kabbah",
-    currency: "Sierra Leonean Leone",
-    symbol: "Le",
-  },
-
-  LRD: {
-    country: "Liberia",
-    flag: "🇱🇷",
-    capital: "Monrovia",
-    landmark: "🏛️ Centennial Pavilion",
-    person: "Ellen Johnson Sirleaf",
-    currency: "Liberian Dollar",
-    symbol: "L$",
-  },
-
-  GMD: {
-    country: "The Gambia",
-    flag: "🇬🇲",
-    capital: "Banjul",
-    landmark: "🐊 Kachikally Crocodile Pool",
-    person: "Dawda Jawara",
-    currency: "Gambian Dalasi",
-    symbol: "D",
-  },
-
-  CVE: {
-    country: "Cape Verde",
-    flag: "🇨🇻",
-    capital: "Praia",
-    landmark: "🏝️ Fogo Volcano",
-    person: "Cesária Évora",
-    currency: "Cape Verdean Escudo",
-    symbol: "$",
-  },
-
-  STD: {
-    country: "São Tomé and Príncipe",
-    flag: "🇸🇹",
-    capital: "São Tomé",
-    landmark: "🌴 Pico Cão Grande",
-    person: "Manuel Pinto da Costa",
-    currency: "São Tomé and Príncipe Dobra",
-    symbol: "Db",
-  },
-
-  ERN: {
-    country: "Eritrea",
-    flag: "🇪🇷",
-    capital: "Asmara",
-    landmark: "🏛️ Fiat Tagliero Building",
-    person: "Isaias Afwerki",
-    currency: "Eritrean Nakfa",
-    symbol: "Nfk",
-  },
-
-    FJD: {
-    country: "Fiji",
-    flag: "🇫🇯",
-    capital: "Suva",
-    landmark: "🏝️ Yasawa Islands",
-    person: "Frank Bainimarama",
-    currency: "Fijian Dollar",
-    symbol: "FJ$",
-  },
-
-  WST: {
-    country: "Samoa",
-    flag: "🇼🇸",
-    capital: "Apia",
-    landmark: "🌊 To Sua Ocean Trench",
-    person: "Fiame Naomi Mataʻafa",
-    currency: "Samoan Tala",
-    symbol: "WS$",
-  },
-
-  TOP: {
-    country: "Tonga",
-    flag: "🇹🇴",
-    capital: "Nukuʻalofa",
-    landmark: "🌊 Mapu'a 'a Vaea Blowholes",
-    person: "Tupou VI",
-    currency: "Tongan Paʻanga",
-    symbol: "T$",
-  },
-
-  VUV: {
-    country: "Vanuatu",
-    flag: "🇻🇺",
-    capital: "Port Vila",
-    landmark: "🌋 Mount Yasur",
-    person: "Walter Lini",
-    currency: "Vanuatu Vatu",
-    symbol: "VT",
-  },
-
-  SBD: {
-    country: "Solomon Islands",
-    flag: "🇸🇧",
-    capital: "Honiara",
-    landmark: "🏝️ Marovo Lagoon",
-    person: "Manasseh Sogavare",
-    currency: "Solomon Islands Dollar",
-    symbol: "SI$",
-  },
-
-  PGK: {
-    country: "Papua New Guinea",
-    flag: "🇵🇬",
-    capital: "Port Moresby",
-    landmark: "🏔️ Kokoda Track",
-    person: "Michael Somare",
-    currency: "Papua New Guinean Kina",
-    symbol: "K",
-  },
-
-  BZD: {
-    country: "Belize",
-    flag: "🇧🇿",
-    capital: "Belmopan",
-    landmark: "🐠 Great Blue Hole",
-    person: "George Price",
-    currency: "Belize Dollar",
-    symbol: "BZ$",
-  },
-
-  BBD: {
-    country: "Barbados",
-    flag: "🇧🇧",
-    capital: "Bridgetown",
-    landmark: "🏖️ Carlisle Bay",
-    person: "Rihanna",
-    currency: "Barbadian Dollar",
-    symbol: "Bds$",
-  },
-
-  BSD: {
-    country: "Bahamas",
-    flag: "🇧🇸",
-    capital: "Nassau",
-    landmark: "🏝️ Pink Sands Beach",
-    person: "Sidney Poitier",
-    currency: "Bahamian Dollar",
-    symbol: "B$",
-  },
-
-  SRD: {
-    country: "Suriname",
-    flag: "🇸🇷",
-    capital: "Paramaribo",
-    landmark: "⛪ Saint Peter and Paul Cathedral",
-    person: "Anton de Kom",
-    currency: "Surinamese Dollar",
-    symbol: "Sr$",
-  },
-
-    KYD: {
-    country: "Cayman Islands",
-    flag: "🇰🇾",
-    capital: "George Town",
-    landmark: "🏖️ Seven Mile Beach",
-    person: "Truman Bodden",
-    currency: "Cayman Islands Dollar",
-    symbol: "CI$",
-  },
-
-  AWG: {
-    country: "Aruba",
-    flag: "🇦🇼",
-    capital: "Oranjestad",
-    landmark: "🌉 Natural Bridge",
-    person: "Xander Bogaerts",
-    currency: "Aruban Florin",
-    symbol: "ƒ",
-  },
-
-  ANG: {
-    country: "Curaçao & Sint Maarten",
-    flag: "🇨🇼",
-    capital: "Willemstad",
-    landmark: "🌈 Queen Emma Bridge",
-    person: "Andruw Jones",
-    currency: "Netherlands Antillean Guilder",
-    symbol: "ƒ",
-  },
-
-  BMD: {
-    country: "Bermuda",
-    flag: "🇧🇲",
-    capital: "Hamilton",
-    landmark: "🏖️ Horseshoe Bay",
-    person: "Flora Duffy",
-    currency: "Bermudian Dollar",
-    symbol: "BD$",
-  },
-
-  GIP: {
-    country: "Gibraltar",
-    flag: "🇬🇮",
-    capital: "Gibraltar",
-    landmark: "🪨 Rock of Gibraltar",
-    person: "Albert Isola",
-    currency: "Gibraltar Pound",
-    symbol: "£",
-  },
-
-  JEP: {
-    country: "Jersey",
-    flag: "🇯🇪",
-    capital: "Saint Helier",
-    landmark: "🏰 Mont Orgueil Castle",
-    person: "Henry Cavill",
-    currency: "Jersey Pound",
-    symbol: "£",
-  },
-
-  GGP: {
-    country: "Guernsey",
-    flag: "🇬🇬",
-    capital: "Saint Peter Port",
-    landmark: "🏰 Castle Cornet",
-    person: "Victor Hugo",
-    currency: "Guernsey Pound",
-    symbol: "£",
-  },
-
-  IMP: {
-    country: "Isle of Man",
-    flag: "🇮🇲",
-    capital: "Douglas",
-    landmark: "🏍️ TT Mountain Course",
-    person: "Mark Cavendish",
-    currency: "Manx Pound",
-    symbol: "£",
-  },
-
-  SHP: {
-    country: "Saint Helena",
-    flag: "🇸🇭",
-    capital: "Jamestown",
-    landmark: "🏝️ Jacob's Ladder",
-    person: "Napoleon Bonaparte",
-    currency: "Saint Helena Pound",
-    symbol: "£",
-  },
-
-  KMF: {
-    country: "Comoros",
-    flag: "🇰🇲",
-    capital: "Moroni",
-    landmark: "🌋 Mount Karthala",
-    person: "Ahmed Abdallah",
-    currency: "Comorian Franc",
-    symbol: "CF",
-  },
-
-    MUR: {
-    country: "Mauritius",
-    flag: "🇲🇺",
-    capital: "Port Louis",
-    landmark: "🌊 Le Morne Brabant",
-    person: "Ameenah Gurib-Fakim",
-    currency: "Mauritian Rupee",
-    symbol: "₨",
-  },
-
-  SCR: {
-    country: "Seychelles",
-    flag: "🇸🇨",
-    capital: "Victoria",
-    landmark: "🏝️ Anse Source d'Argent",
-    person: "Danny Faure",
-    currency: "Seychellois Rupee",
-    symbol: "₨",
-  },
-
-  MVR: {
-    country: "Maldives",
-    flag: "🇲🇻",
-    capital: "Malé",
-    landmark: "🏝️ Vaadhoo Island",
-    person: "Mohamed Nasheed",
-    currency: "Maldivian Rufiyaa",
-    symbol: "Rf",
-  },
-
-  BND: {
-    country: "Brunei",
-    flag: "🇧🇳",
-    capital: "Bandar Seri Begawan",
-    landmark: "🕌 Omar Ali Saifuddien Mosque",
-    person: "Sultan Hassanal Bolkiah",
-    currency: "Brunei Dollar",
-    symbol: "B$",
-  },
-
-  XPF: {
-    country: "French Polynesia",
-    flag: "🇵🇫",
-    capital: "Papeete",
-    landmark: "🏝️ Bora Bora",
-    person: "Édouard Fritch",
-    currency: "CFP Franc",
-    symbol: "₣",
-  },
-
-  CKD: {
-    country: "Cook Islands",
-    flag: "🇨🇰",
-    capital: "Avarua",
-    landmark: "🏝️ Muri Lagoon",
-    person: "Tom Marsters",
-    currency: "Cook Islands Dollar",
-    symbol: "CK$",
-  },
-
-  TVD: {
-    country: "Tuvalu",
-    flag: "🇹🇻",
-    capital: "Funafuti",
-    landmark: "🏝️ Funafuti Conservation Area",
-    person: "Kausea Natano",
-    currency: "Tuvaluan Dollar",
-    symbol: "TV$",
-  },
-
-  KID: {
-    country: "Kiribati",
-    flag: "🇰🇮",
-    capital: "South Tarawa",
-    landmark: "🌊 Millennium Island",
-    person: "Taneti Maamau",
-    currency: "Kiribati Dollar",
-    symbol: "K$",
-  },
-    ALL: {
-    country: "Albania",
-    flag: "🇦🇱",
-    capital: "Tirana",
-    landmark: "🏰 Skanderbeg Square",
-    person: "Mother Teresa",
-    currency: "Albanian Lek",
-    symbol: "L",
-  },
-
-  BAM: {
-    country: "Bosnia and Herzegovina",
-    flag: "🇧🇦",
-    capital: "Sarajevo",
-    landmark: "🌉 Stari Most",
-    person: "Edin Džeko",
-    currency: "Bosnia and Herzegovina Convertible Mark",
-    symbol: "KM",
-  },
-
-  MKD: {
-    country: "North Macedonia",
-    flag: "🇲🇰",
-    capital: "Skopje",
-    landmark: "🗿 Warrior on a Horse",
-    person: "Mother Teresa",
-    currency: "Macedonian Denar",
-    symbol: "ден",
-  },
-
-  RSD: {
-    country: "Serbia",
-    flag: "🇷🇸",
-    capital: "Belgrade",
-    landmark: "🏰 Belgrade Fortress",
-    person: "Novak Djokovic",
-    currency: "Serbian Dinar",
-    symbol: "дин.",
+  country: "Czech Republic",
+  flag: "🇨🇿",
+  capital: "Prague",
+  landmark: "🌉 Charles Bridge",
+  person: "Franz Kafka",
+  currency: "Czech Koruna",
+  symbol: "Kč",
+},
+
+HUF: {
+  country: "Hungary",
+  flag: "🇭🇺",
+  capital: "Budapest",
+  landmark: "🏛 Hungarian Parliament",
+  person: "Ferenc Puskás",
+  currency: "Hungarian Forint",
+  symbol: "Ft",
+},
+
+RON: {
+  country: "Romania",
+  flag: "🇷🇴",
+  capital: "Bucharest",
+  landmark: "🏰 Bran Castle",
+  person: "Nadia Comăneci",
+  currency: "Romanian Leu",
+  symbol: "lei",
+},
+
+BGN: {
+  country: "Bulgaria",
+  flag: "🇧🇬",
+  capital: "Sofia",
+  landmark: "⛪ Alexander Nevsky Cathedral",
+  person: "Hristo Stoichkov",
+  currency: "Bulgarian Lev",
+  symbol: "лв",
+},
+
+UAH: {
+  country: "Ukraine",
+  flag: "🇺🇦",
+  capital: "Kyiv",
+  landmark: "⛪ Saint Sophia Cathedral",
+  person: "Volodymyr Zelenskyy",
+  currency: "Ukrainian Hryvnia",
+  symbol: "₴",
+},
+
+ISK: {
+  country: "Iceland",
+  flag: "🇮🇸",
+  capital: "Reykjavík",
+  landmark: "🌋 Blue Lagoon",
+  person: "Björk",
+  currency: "Icelandic Króna",
+  symbol: "kr",
+},
+
+KZT: {
+  country: "Kazakhstan",
+  flag: "🇰🇿",
+  capital: "Astana",
+  landmark: "🗼 Bayterek Tower",
+  person: "Gennady Golovkin",
+  currency: "Kazakhstani Tenge",
+  symbol: "₸",
+},
+
+UZS: {
+  country: "Uzbekistan",
+  flag: "🇺🇿",
+  capital: "Tashkent",
+  landmark: "🕌 Registan Square",
+  person: "Islam Karimov",
+  currency: "Uzbekistani Som",
+  symbol: "so'm",
+},
+
+TJS: {
+  country: "Tajikistan",
+  flag: "🇹🇯",
+  capital: "Dushanbe",
+  landmark: "🏔 Ismoil Somoni Monument",
+  person: "Emomali Rahmon",
+  currency: "Tajikistani Somoni",
+  symbol: "ЅМ",
+},
+
+TMT: {
+  country: "Turkmenistan",
+  flag: "🇹🇲",
+  capital: "Ashgabat",
+  landmark: "🏛 Independence Monument",
+  person: "Gurbanguly Berdimuhamedow",
+  currency: "Turkmenistani Manat",
+  symbol: "m",
+},
+
+//batch4
+
+KGS: {
+  country: "Kyrgyzstan",
+  flag: "🇰🇬",
+  capital: "Bishkek",
+  landmark: "⛰ Ala-Too Square",
+  person: "Chingiz Aitmatov",
+  currency: "Kyrgyzstani Som",
+  symbol: "с",
+},
+
+AMD: {
+  country: "Armenia",
+  flag: "🇦🇲",
+  capital: "Yerevan",
+  landmark: "⛰ Mount Ararat",
+  person: "Serj Tankian",
+  currency: "Armenian Dram",
+  symbol: "֏",
+},
+
+GEL: {
+  country: "Georgia",
+  flag: "🇬🇪",
+  capital: "Tbilisi",
+  landmark: "🏰 Narikala Fortress",
+  person: "Nino Burjanadze",
+  currency: "Georgian Lari",
+  symbol: "₾",
+},
+
+AZN: {
+  country: "Azerbaijan",
+  flag: "🇦🇿",
+  capital: "Baku",
+  landmark: "🔥 Flame Towers",
+  person: "Garry Kasparov",
+  currency: "Azerbaijani Manat",
+  symbol: "₼",
+},
+
+MDL: {
+  country: "Moldova",
+  flag: "🇲🇩",
+  capital: "Chișinău",
+  landmark: "🍇 Cricova Winery",
+  person: "Nicolae Testemițanu",
+  currency: "Moldovan Leu",
+  symbol: "L",
+},
+
+BYN: {
+  country: "Belarus",
+  flag: "🇧🇾",
+  capital: "Minsk",
+  landmark: "🏛 Independence Square",
+  person: "Aryna Sabalenka",
+  currency: "Belarusian Ruble",
+  symbol: "Br",
+},
+
+ETB: {
+  country: "Ethiopia",
+  flag: "🇪🇹",
+  capital: "Addis Ababa",
+  landmark: "⛪ Lalibela Churches",
+  person: "Abiy Ahmed",
+  currency: "Ethiopian Birr",
+  symbol: "Br",
+},
+
+DJF: {
+  country: "Djibouti",
+  flag: "🇩🇯",
+  capital: "Djibouti",
+  landmark: "🌊 Lake Assal",
+  person: "Ismaïl Omar Guelleh",
+  currency: "Djiboutian Franc",
+  symbol: "Fdj",
+},
+
+TZS: {
+  country: "Tanzania",
+  flag: "🇹🇿",
+  capital: "Dodoma",
+  landmark: "🏔 Mount Kilimanjaro",
+  person: "Julius Nyerere",
+  currency: "Tanzanian Shilling",
+  symbol: "TSh",
+},
+
+UGX: {
+  country: "Uganda",
+  flag: "🇺🇬",
+  capital: "Kampala",
+  landmark: "🦍 Bwindi National Park",
+  person: "Yoweri Museveni",
+  currency: "Ugandan Shilling",
+  symbol: "USh",
+},
+
+//batch5
+
+  JOD: {
+    country: "Jordan",
+    flag: "🇯🇴",
+    capital: "Amman",
+    landmark: "🏜️ Petra",
+    person: "King Abdullah II",
+    currency: "Jordanian Dinar",
+    symbol: "JD",
+  },
+
+  ILS: {
+    country: "Israel",
+    flag: "🇮🇱",
+    capital: "Jerusalem",
+    landmark: "🕍 Western Wall",
+    person: "David Ben-Gurion",
+    currency: "Israeli New Shekel",
+    symbol: "₪",
+  },
+
+  TND: {
+    country: "Tunisia",
+    flag: "🇹🇳",
+    capital: "Tunis",
+    landmark: "🏛️ Carthage",
+    person: "Habib Bourguiba",
+    currency: "Tunisian Dinar",
+    symbol: "DT",
   },
 
   DZD: {
@@ -1126,7 +676,7 @@ export const countryInfo: Record<string, any> = {
     symbol: "FBu",
   },
 
-    HTG: {
+  HTG: {
     country: "Haiti",
     flag: "🇭🇹",
     capital: "Port-au-Prince",
@@ -1226,6 +776,8 @@ export const countryInfo: Record<string, any> = {
     symbol: "₡",
   },
 
+
+  //batch6
     AFN: {
     country: "Afghanistan",
     flag: "🇦🇫",
@@ -1240,7 +792,7 @@ export const countryInfo: Record<string, any> = {
     country: "Iran",
     flag: "🇮🇷",
     capital: "Tehran",
-    landmark: "🕌 Azadi Tower",
+    landmark: "🗼 Azadi Tower",
     person: "Omar Khayyam",
     currency: "Iranian Rial",
     symbol: "﷼",
@@ -1251,7 +803,7 @@ export const countryInfo: Record<string, any> = {
     flag: "🇮🇶",
     capital: "Baghdad",
     landmark: "🕌 Al-Mustansiriya",
-    person: "Saddam Hussein",
+    person: "Harun al-Rashid",
     currency: "Iraqi Dinar",
     symbol: "ع.د",
   },
@@ -1276,46 +828,6 @@ export const countryInfo: Record<string, any> = {
     symbol: "﷼",
   },
 
-  OMR: {
-    country: "Oman",
-    flag: "🇴🇲",
-    capital: "Muscat",
-    landmark: "🕌 Sultan Qaboos Grand Mosque",
-    person: "Sultan Qaboos",
-    currency: "Omani Rial",
-    symbol: "ر.ع.",
-  },
-
-  BHD: {
-    country: "Bahrain",
-    flag: "🇧🇭",
-    capital: "Manama",
-    landmark: "🏰 Bahrain Fort",
-    person: "Hamad bin Isa Al Khalifa",
-    currency: "Bahraini Dinar",
-    symbol: ".د.ب",
-  },
-
-  QAR: {
-    country: "Qatar",
-    flag: "🇶🇦",
-    capital: "Doha",
-    landmark: "🏛️ Museum of Islamic Art",
-    person: "Tamim bin Hamad Al Thani",
-    currency: "Qatari Riyal",
-    symbol: "ر.ق",
-  },
-
-  KWD: {
-    country: "Kuwait",
-    flag: "🇰🇼",
-    capital: "Kuwait City",
-    landmark: "🗼 Kuwait Towers",
-    person: "Sabah Al-Ahmad Al-Jaber Al-Sabah",
-    currency: "Kuwaiti Dinar",
-    symbol: "د.ك",
-  },
-
   LBP: {
     country: "Lebanon",
     flag: "🇱🇧",
@@ -1324,16 +836,6 @@ export const countryInfo: Record<string, any> = {
     person: "Kahlil Gibran",
     currency: "Lebanese Pound",
     symbol: "ل.ل",
-  },
-
-    MOP: {
-    country: "Macau",
-    flag: "🇲🇴",
-    capital: "Macau",
-    landmark: "🎰 Ruins of St. Paul's",
-    person: "Stanley Ho",
-    currency: "Macanese Pataca",
-    symbol: "MOP$",
   },
 
   BTN: {
@@ -1346,14 +848,24 @@ export const countryInfo: Record<string, any> = {
     symbol: "Nu.",
   },
 
-  LAK: {
-    country: "Laos",
-    flag: "🇱🇦",
-    capital: "Vientiane",
-    landmark: "🛕 Pha That Luang",
-    person: "Kaysone Phomvihane",
-    currency: "Lao Kip",
-    symbol: "₭",
+  MVR: {
+    country: "Maldives",
+    flag: "🇲🇻",
+    capital: "Malé",
+    landmark: "🏝️ Vaadhoo Island",
+    person: "Mohamed Nasheed",
+    currency: "Maldivian Rufiyaa",
+    symbol: "Rf",
+  },
+
+  BND: {
+    country: "Brunei",
+    flag: "🇧🇳",
+    capital: "Bandar Seri Begawan",
+    landmark: "🕌 Omar Ali Saifuddien Mosque",
+    person: "Sultan Hassanal Bolkiah",
+    currency: "Brunei Dollar",
+    symbol: "B$",
   },
 
   MMK: {
@@ -1376,6 +888,16 @@ export const countryInfo: Record<string, any> = {
     symbol: "៛",
   },
 
+  LAK: {
+    country: "Laos",
+    flag: "🇱🇦",
+    capital: "Vientiane",
+    landmark: "🛕 Pha That Luang",
+    person: "Kaysone Phomvihane",
+    currency: "Lao Kip",
+    symbol: "₭",
+  },
+
   MNT: {
     country: "Mongolia",
     flag: "🇲🇳",
@@ -1384,16 +906,6 @@ export const countryInfo: Record<string, any> = {
     person: "Genghis Khan",
     currency: "Mongolian Tögrög",
     symbol: "₮",
-  },
-
-  KPW: {
-    country: "North Korea",
-    flag: "🇰🇵",
-    capital: "Pyongyang",
-    landmark: "🗼 Juche Tower",
-    person: "Kim Il-sung",
-    currency: "North Korean Won",
-    symbol: "₩",
   },
 
   TWD: {
@@ -1406,218 +918,449 @@ export const countryInfo: Record<string, any> = {
     symbol: "NT$",
   },
 
-    MGA: {
-    country: "Madagascar",
-    flag: "🇲🇬",
-    capital: "Antananarivo",
-    landmark: "🌳 Avenue of the Baobabs",
-    person: "Andry Rajoelina",
-    currency: "Malagasy Ariary",
-    symbol: "Ar",
+  KPW: {
+    country: "North Korea",
+    flag: "🇰🇵",
+    capital: "Pyongyang",
+    landmark: "🗼 Juche Tower",
+    person: "Kim Il-sung",
+    currency: "North Korean Won",
+    symbol: "₩",
   },
 
-  SZL: {
-    country: "Eswatini",
-    flag: "🇸🇿",
-    capital: "Mbabane",
-    landmark: "🏞️ Mlilwane Wildlife Sanctuary",
-    person: "Mswati III",
-    currency: "Swazi Lilangeni",
-    symbol: "E",
-  },
-    BEL: {
-    country: "Belgium",
-    flag: "🇧🇪",
-    capital: "Brussels",
-    landmark: "🏛️ Grand Place",
-    person: "Eddy Merckx",
-    currency: "Euro",
-    symbol: "€",
+  MOP: {
+    country: "Macau",
+    flag: "🇲🇴",
+    capital: "Macau",
+    landmark: "🎰 Ruins of St. Paul's",
+    person: "Stanley Ho",
+    currency: "Macanese Pataca",
+    symbol: "MOP$",
   },
 
-  NLD: {
-    country: "Netherlands",
-    flag: "🇳🇱",
-    capital: "Amsterdam",
-    landmark: "🌷 Keukenhof Gardens",
-    person: "Vincent van Gogh",
-    currency: "Euro",
-    symbol: "€",
-  },
+  //batch7
+  // batch7
+
+NOK: {
+  country: "Norway",
+  flag: "🇳🇴",
+  capital: "Oslo",
+  landmark: "🗿 Vigeland Park",
+  person: "Erling Haaland",
+  currency: "Norwegian Krone",
+  symbol: "kr",
+},
+
+SEK: {
+  country: "Sweden",
+  flag: "🇸🇪",
+  capital: "Stockholm",
+  landmark: "🏛 Vasa Museum",
+  person: "Zlatan Ibrahimović",
+  currency: "Swedish Krona",
+  symbol: "kr",
+},
+
+DKK: {
+  country: "Denmark",
+  flag: "🇩🇰",
+  capital: "Copenhagen",
+  landmark: "🧜 Little Mermaid",
+  person: "Hans Christian Andersen",
+  currency: "Danish Krone",
+  symbol: "kr",
+},
+
+PLN: {
+  country: "Poland",
+  flag: "🇵🇱",
+  capital: "Warsaw",
+  landmark: "🏰 Wawel Castle",
+  person: "Marie Curie",
+  currency: "Polish Złoty",
+  symbol: "zł",
+},
+
+RSD: {
+  country: "Serbia",
+  flag: "🇷🇸",
+  capital: "Belgrade",
+  landmark: "🏰 Belgrade Fortress",
+  person: "Novak Djokovic",
+  currency: "Serbian Dinar",
+  symbol: "дин.",
+},
+
+ALL: {
+  country: "Albania",
+  flag: "🇦🇱",
+  capital: "Tirana",
+  landmark: "🦅 Skanderbeg Square",
+  person: "Mother Teresa",
+  currency: "Albanian Lek",
+  symbol: "L",
+},
+
+MKD: {
+  country: "North Macedonia",
+  flag: "🇲🇰",
+  capital: "Skopje",
+  landmark: "🌉 Stone Bridge",
+  person: "Mother Teresa",
+  currency: "Macedonian Denar",
+  symbol: "ден",
+},
+
+BAM: {
+  country: "Bosnia and Herzegovina",
+  flag: "🇧🇦",
+  capital: "Sarajevo",
+  landmark: "🌉 Stari Most",
+  person: "Ivo Andrić",
+  currency: "Bosnia-Herzegovina Convertible Mark",
+  symbol: "KM",
+},
+
+HRK: {
+  country: "Croatia",
+  flag: "🇭🇷",
+  capital: "Zagreb",
+  landmark: "🏰 Dubrovnik Walls",
+  person: "Luka Modrić",
+  currency: "Croatian Kuna",
+  symbol: "kn",
+},
+
+FJD: {
+  country: "Fiji",
+  flag: "🇫🇯",
+  capital: "Suva",
+  landmark: "🏝️ Yasawa Islands",
+  person: "Frank Bainimarama",
+  currency: "Fijian Dollar",
+  symbol: "FJ$",
+},
+
+WST: {
+  country: "Samoa",
+  flag: "🇼🇸",
+  capital: "Apia",
+  landmark: "🌊 To Sua Ocean Trench",
+  person: "Tuilaepa Sailele",
+  currency: "Samoan Tala",
+  symbol: "WS$",
+},
+
+TOP: {
+  country: "Tonga",
+  flag: "🇹🇴",
+  capital: "Nukuʻalofa",
+  landmark: "🌊 Mapu'a 'a Vaea Blowholes",
+  person: "King Tupou VI",
+  currency: "Tongan Paʻanga",
+  symbol: "T$",
+},
+
+VUV: {
+  country: "Vanuatu",
+  flag: "🇻🇺",
+  capital: "Port Vila",
+  landmark: "🌋 Mount Yasur",
+  person: "Walter Lini",
+  currency: "Vanuatu Vatu",
+  symbol: "VT",
+},
+
+PGK: {
+  country: "Papua New Guinea",
+  flag: "🇵🇬",
+  capital: "Port Moresby",
+  landmark: "🦜 Kokoda Track",
+  person: "Michael Somare",
+  currency: "Papua New Guinean Kina",
+  symbol: "K",
+},
+
+SBD: {
+  country: "Solomon Islands",
+  flag: "🇸🇧",
+  capital: "Honiara",
+  landmark: "🏝️ Guadalcanal",
+  person: "Manasseh Sogavare",
+  currency: "Solomon Islands Dollar",
+  symbol: "SI$",
+},
+
+//batch8
+// Batch 8
+
+SRD: {
+  country: "Suriname",
+  flag: "🇸🇷",
+  capital: "Paramaribo",
+  landmark: "🌴 Saint Peter and Paul Cathedral",
+  person: "Anton de Kom",
+  currency: "Surinamese Dollar",
+  symbol: "SRD",
+},
+
+AWG: {
+  country: "Aruba",
+  flag: "🇦🇼",
+  capital: "Oranjestad",
+  landmark: "🏖 Eagle Beach",
+  person: "Beth Tweddle",
+  currency: "Aruban Florin",
+  symbol: "ƒ",
+},
+
+ANG: {
+  country: "Curaçao & Sint Maarten",
+  flag: "🇨🇼",
+  capital: "Willemstad",
+  landmark: "🌈 Queen Emma Bridge",
+  person: "Tula",
+  currency: "Netherlands Antillean Guilder",
+  symbol: "ƒ",
+},
+
+CDF: {
+  country: "Democratic Republic of the Congo",
+  flag: "🇨🇩",
+  capital: "Kinshasa",
+  landmark: "🌊 Congo River",
+  person: "Patrice Lumumba",
+  currency: "Congolese Franc",
+  symbol: "FC",
+},
+
+GNF: {
+  country: "Guinea",
+  flag: "🇬🇳",
+  capital: "Conakry",
+  landmark: "🏞 Mount Nimba",
+  person: "Ahmed Sékou Touré",
+  currency: "Guinean Franc",
+  symbol: "FG",
+},
+
+RWF: {
+  country: "Rwanda",
+  flag: "🇷🇼",
+  capital: "Kigali",
+  landmark: "🦍 Volcanoes National Park",
+  person: "Paul Kagame",
+  currency: "Rwandan Franc",
+  symbol: "FRw",
+},
+
+MWK: {
+  country: "Malawi",
+  flag: "🇲🇼",
+  capital: "Lilongwe",
+  landmark: "🌊 Lake Malawi",
+  person: "Hastings Banda",
+  currency: "Malawian Kwacha",
+  symbol: "MK",
+},
+
+MZN: {
+  country: "Mozambique",
+  flag: "🇲🇿",
+  capital: "Maputo",
+  landmark: "🏝 Bazaruto Archipelago",
+  person: "Samora Machel",
+  currency: "Mozambican Metical",
+  symbol: "MT",
+},
+
+AOA: {
+  country: "Angola",
+  flag: "🇦🇴",
+  capital: "Luanda",
+  landmark: "🌊 Kalandula Falls",
+  person: "Agostinho Neto",
+  currency: "Angolan Kwanza",
+  symbol: "Kz",
+},
+
+ZMW: {
+  country: "Zambia",
+  flag: "🇿🇲",
+  capital: "Lusaka",
+  landmark: "🌊 Victoria Falls",
+  person: "Kenneth Kaunda",
+  currency: "Zambian Kwacha",
+  symbol: "ZK",
+},
+
+//batch 9
+// batch9
+
+ERN: {
+  country: "Eritrea",
+  flag: "🇪🇷",
+  capital: "Asmara",
+  landmark: "⛪ Fiat Tagliero Building",
+  person: "Isaias Afwerki",
+  currency: "Eritrean Nakfa",
+  symbol: "Nfk",
+},
+
+
+
+SOS: {
+  country: "Somalia",
+  flag: "🇸🇴",
+  capital: "Mogadishu",
+  landmark: "🏖 Liido Beach",
+  person: "Aden Adde",
+  currency: "Somali Shilling",
+  symbol: "Sh",
+},
+
+SCR: {
+  country: "Seychelles",
+  flag: "🇸🇨",
+  capital: "Victoria",
+  landmark: "🏝 Anse Source d'Argent",
+  person: "Wavel Ramkalawan",
+  currency: "Seychellois Rupee",
+  symbol: "₨",
+},
+
+MUR: {
+  country: "Mauritius",
+  flag: "🇲🇺",
+  capital: "Port Louis",
+  landmark: "🌈 Chamarel Seven Coloured Earth",
+  person: "Seewoosagur Ramgoolam",
+  currency: "Mauritian Rupee",
+  symbol: "₨",
+},
+
+KMF: {
+  country: "Comoros",
+  flag: "🇰🇲",
+  capital: "Moroni",
+  landmark: "🌋 Mount Karthala",
+  person: "Ahmed Abdallah",
+  currency: "Comorian Franc",
+  symbol: "CF",
+},
+
+CVE: {
+  country: "Cape Verde",
+  flag: "🇨🇻",
+  capital: "Praia",
+  landmark: "🌋 Pico do Fogo",
+  person: "Cesária Évora",
+  currency: "Cape Verdean Escudo",
+  symbol: "$",
+},
+
+GMD: {
+  country: "The Gambia",
+  flag: "🇬🇲",
+  capital: "Banjul",
+  landmark: "🌊 Kunta Kinteh Island",
+  person: "Dawda Jawara",
+  currency: "Gambian Dalasi",
+  symbol: "D",
+},
+
+
+
+SLL: {
+  country: "Sierra Leone",
+  flag: "🇸🇱",
+  capital: "Freetown",
+  landmark: "🌳 Cotton Tree",
+  person: "Bai Bureh",
+  currency: "Sierra Leonean Leone",
+  symbol: "Le",
+},
+
+STN: {
+  country: "São Tomé and Príncipe",
+  flag: "🇸🇹",
+  capital: "São Tomé",
+  landmark: "🌋 Pico Cão Grande",
+  person: "Manuel Pinto da Costa",
+  currency: "São Tomé and Príncipe Dobra",
+  symbol: "Db",
+},
+
+LRD: {
+  country: "Liberia",
+  flag: "🇱🇷",
+  capital: "Monrovia",
+  landmark: "🏖 Providence Island",
+  person: "Ellen Johnson Sirleaf",
+  currency: "Liberian Dollar",
+  symbol: "L$",
+},
+
+//batch10
+// batch10
+
+
+
+NAD: {
+  country: "Namibia",
+  flag: "🇳🇦",
+  capital: "Windhoek",
+  landmark: "🏜 Sossusvlei",
+  person: "Sam Nujoma",
+  currency: "Namibian Dollar",
+  symbol: "N$",
+},
+
+BWP: {
+  country: "Botswana",
+  flag: "🇧🇼",
+  capital: "Gaborone",
+  landmark: "🦁 Okavango Delta",
+  person: "Seretse Khama",
+  currency: "Botswana Pula",
+  symbol: "P",
+},
+
+XAF: {
+  country: "Central African States",
+  flag: "🇨🇲",
+  capital: "Yaoundé",
+  landmark: "🌋 Mount Cameroon",
+  person: "Ahmadou Ahidjo",
+  currency: "Central African CFA Franc",
+  symbol: "FCFA",
+},
+
+XOF: {
+  country: "West African States",
+  flag: "🇸🇳",
+  capital: "Dakar",
+  landmark: "🗿 African Renaissance Monument",
+  person: "Léopold Sédar Senghor",
+  currency: "West African CFA Franc",
+  symbol: "CFA",
+},
+
+XPF: {
+  country: "French Pacific Territories",
+  flag: "🇵🇫",
+  capital: "Papeete",
+  landmark: "🏝 Bora Bora",
+  person: "Pouvanaa a Oopa",
+  currency: "CFP Franc",
+  symbol: "₣",
+},
+
 
   
-  
-
-  IRL: {
-    country: "Ireland",
-    flag: "🇮🇪",
-    capital: "Dublin",
-    landmark: "☘️ Cliffs of Moher",
-    person: "Conor McGregor",
-    currency: "Euro",
-    symbol: "€",
-  },
-
-  
-
-  LUX: {
-    country: "Luxembourg",
-    flag: "🇱🇺",
-    capital: "Luxembourg City",
-    landmark: "🏰 Vianden Castle",
-    person: "Grand Duke Henri",
-    currency: "Euro",
-    symbol: "€",
-  },
-
-  MLT: {
-    country: "Malta",
-    flag: "🇲🇹",
-    capital: "Valletta",
-    landmark: "🏛️ St. John's Co-Cathedral",
-    person: "Joseph Muscat",
-    currency: "Euro",
-    symbol: "€",
-  },
-
-  CYP: {
-    country: "Cyprus",
-    flag: "🇨🇾",
-    capital: "Nicosia",
-    landmark: "🏖️ Petra tou Romiou",
-    person: "Makarios III",
-    currency: "Euro",
-    symbol: "€",
-  },
-
-  SVN: {
-    country: "Slovenia",
-    flag: "🇸🇮",
-    capital: "Ljubljana",
-    landmark: "🏞️ Lake Bled",
-    person: "Luka Dončić",
-    currency: "Euro",
-    symbol: "€",
-  },
-
-  SVK: {
-    country: "Slovakia",
-    flag: "🇸🇰",
-    capital: "Bratislava",
-    landmark: "🏰 Bratislava Castle",
-    person: "Peter Sagan",
-    currency: "Euro",
-    symbol: "€",
-  },
-
-  HRV: {
-    country: "Croatia",
-    flag: "🇭🇷",
-    capital: "Zagreb",
-    landmark: "🌊 Dubrovnik Old Town",
-    person: "Luka Modrić",
-    currency: "Euro",
-    symbol: "€",
-  },
-
-  GRC: {
-    country: "Greece",
-    flag: "🇬🇷",
-    capital: "Athens",
-    landmark: "🏛️ Acropolis",
-    person: "Giannis Antetokounmpo",
-    currency: "Euro",
-    symbol: "€",
-  },
-
-  EST: {
-    country: "Estonia",
-    flag: "🇪🇪",
-    capital: "Tallinn",
-    landmark: "🏰 Tallinn Old Town",
-    person: "Arvo Pärt",
-    currency: "Euro",
-    symbol: "€",
-  },
-
-  LVA: {
-    country: "Latvia",
-    flag: "🇱🇻",
-    capital: "Riga",
-    landmark: "⛪ Riga Cathedral",
-    person: "Kristaps Porziņģis",
-    currency: "Euro",
-    symbol: "€",
-  },
-
-  LTU: {
-    country: "Lithuania",
-    flag: "🇱🇹",
-    capital: "Vilnius",
-    landmark: "🏰 Gediminas Castle",
-    person: "Arvydas Sabonis",
-    currency: "Euro",
-    symbol: "€",
-  },
-
-  JOD: {
-    country: "Jordan",
-    flag: "🇯🇴",
-    capital: "Amman",
-    landmark: "🏜️ Petra",
-    person: "King Abdullah II",
-    currency: "Jordanian Dinar",
-    symbol: "JD",
-  },
-
-  ILS: {
-    country: "Israel",
-    flag: "🇮🇱",
-    capital: "Jerusalem",
-    landmark: "🕍 Western Wall",
-    person: "David Ben-Gurion",
-    currency: "Israeli New Shekel",
-    symbol: "₪",
-  },
-
-  TND: {
-    country: "Tunisia",
-    flag: "🇹🇳",
-    capital: "Tunis",
-    landmark: "🏛️ Carthage",
-    person: "Habib Bourguiba",
-    currency: "Tunisian Dinar",
-    symbol: "DT",
-  },
-
-  EUR_KOS: {
-    country: "Kosovo",
-    flag: "🇽🇰",
-    capital: "Pristina",
-    landmark: "🏛️ Newborn Monument",
-    person: "Rita Ora",
-    currency: "Euro",
-    symbol: "€",
-  },
-
-  EUR_MNE: {
-    country: "Montenegro",
-    flag: "🇲🇪",
-    capital: "Podgorica",
-    landmark: "🏞️ Kotor Bay",
-    person: "Novak Đoković (popular in region)",
-    currency: "Euro",
-    symbol: "€",
-  },
-
-  
 
   
 
 
-
-  
-  
-  
 
 };

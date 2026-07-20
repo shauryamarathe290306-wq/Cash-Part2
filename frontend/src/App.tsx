@@ -14,6 +14,7 @@ function App() {
   const [result, setResult] = useState("");
   const [exchangeRate, setExchangeRate] = useState("");
   const [lastUpdated, setLastUpdated] = useState("");
+  
 const fromInfo =
   countryInfo[fromCurrency as keyof typeof countryInfo];
 

@@ -1,0 +1,82 @@
+.country-card {
+    flex: 1;
+    min-width: 260px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 22px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s ease;
+}
+
+.country-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(37, 99, 235, 0.35);
+}
+
+.country-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.country-flag {
+    font-size: 60px;
+}
+
+.country-header h2 {
+    margin: 10px 0 5px;
+    font-size: 28px;
+}
+
+.currency-name {
+    color: #94a3b8;
+    margin: 0;
+}
+
+.currency-symbol {
+    color: #22c55e;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.country-card hr {
+    border: none;
+    border-top: 1px solid #374151;
+    margin: 20px 0;
+}
+
+.country-card p {
+    font-size: 17px;
+    margin: 12px 0;
+    line-height: 1.6;
+}
+
+.country-card strong {
+    color: #60a5fa;
+}
+
+.convert-btn {
+    width: 100%;
+    padding: 18px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.35);
+}
+
+.convert-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.55);
+}
+
+.convert-btn:active {
+    transform: scale(0.98);
+}

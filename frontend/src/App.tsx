@@ -1,9 +1,18 @@
 import { useState } from "react";
 import SearchDropdown from "./components/SearchDropdown";
 import { countryInfo } from "./data/countryInfo";
+import CountryCard from "./components/CountryCard";
 
 function App() {
   const [amount, setAmount] = useState("");
+  const favoriteCurrencies = [
+  "INR",
+  "USD",
+  "EUR",
+  "GBP",
+  "JPY",
+  "AUD",
+];
 
   const [fromCurrency, setFromCurrency] = useState("USD");
   const [toCurrency, setToCurrency] = useState("INR");
@@ -14,6 +23,7 @@ function App() {
   const [result, setResult] = useState("");
   const [exchangeRate, setExchangeRate] = useState("");
   const [lastUpdated, setLastUpdated] = useState("");
+  const [darkMode, setDarkMode] = useState(true);
   
 const fromInfo =
   countryInfo[fromCurrency as keyof typeof countryInfo];
@@ -59,22 +69,82 @@ const toInfo =
   };
 
   return (
+  <div
+    style={{
+      minHeight: "100vh",
+      background:
+        "linear-gradient(135deg,#020617,#0f172a,#1e293b,#312e81,#0f172a)",
+      backgroundSize: "400% 400%",
+      animation: "gradient 15s ease infinite",
+      padding: "50px 20px",
+      color: "white",
+      fontFamily: "Arial",
+      position: "relative",
+      overflow: "hidden",
+    }}
+  >
+    {/* Background Glow */}
     <div
       style={{
-        minHeight: "100vh",
-        background:
-          "linear-gradient(135deg,#0f172a,#1e293b,#111827)",
-        padding: "50px 20px",
-        color: "white",
-        fontFamily: "Arial",
+        position: "fixed",
+        inset: 0,
+        overflow: "hidden",
+        zIndex: 0,
+        pointerEvents: "none",
       }}
     >
       <div
         style={{
-          maxWidth: "520px",
-          margin: "auto",
+          position: "absolute",
+          width: "350px",
+          height: "350px",
+          background: "#2563eb",
+          opacity: 0.18,
+          filter: "blur(120px)",
+          borderRadius: "50%",
+          top: "-120px",
+          left: "-120px",
         }}
-      >
+      />
+
+      <div
+        style={{
+          position: "absolute",
+          width: "300px",
+          height: "300px",
+          background: "#22c55e",
+          opacity: 0.15,
+          filter: "blur(120px)",
+          borderRadius: "50%",
+          bottom: "-100px",
+          right: "-100px",
+        }}
+      />
+
+      <div
+        style={{
+          position: "absolute",
+          width: "250px",
+          height: "250px",
+          background: "#7c3aed",
+          opacity: 0.15,
+          filter: "blur(120px)",
+          borderRadius: "50%",
+          top: "45%",
+          left: "65%",
+        }}
+      />
+    </div>
+    
+      <div
+  style={{
+    maxWidth: "520px",
+    margin: "auto",
+    position: "relative",
+    zIndex: 1,
+  }}
+>
+      
         <h1
           style={{
             textAlign: "center",
@@ -84,6 +154,64 @@ const toInfo =
         >
           🌍 CurrencyVerse
         </h1>
+
+        <div
+  style={{
+    marginBottom: "25px",
+  }}
+>
+  <h3
+    style={{
+      marginBottom: "12px",
+      color: "#cbd5e1",
+      fontWeight: "500",
+    }}
+  >
+    ⭐ Favorite Currencies
+  </h3>
+
+  <div
+    style={{
+      display: "flex",
+      flexWrap: "wrap",
+      gap: "10px",
+    }}
+  >
+    {favoriteCurrencies.map((currency) => (
+      <button
+        key={currency}
+        onClick={() => {
+          setFromCurrency(currency);
+
+          const info = countryInfo[currency as keyof typeof countryInfo];
+
+          if (info) {
+            setFromDisplay(info.country);
+          }
+        }}
+        style={{
+          padding: "10px 16px",
+          borderRadius: "12px",
+          border: "none",
+          cursor: "pointer",
+          background:
+            fromCurrency === currency
+              ? "linear-gradient(135deg,#2563eb,#7c3aed)"
+              : "rgba(255,255,255,0.08)",
+          color: "white",
+          fontWeight: "bold",
+          transition: "0.3s",
+          boxShadow:
+            fromCurrency === currency
+              ? "0 8px 20px rgba(59,130,246,.35)"
+              : "none",
+        }}
+      >
+        {currency}
+      </button>
+    ))}
+  </div>
+</div>
 
         <input
           type="number"
@@ -156,23 +284,11 @@ const toInfo =
         />
 
         <button
-          onClick={handleConvert}
-          style={{
-            width: "100%",
-            padding: "15px",
-            marginTop: "20px",
-            borderRadius: "10px",
-            cursor: "pointer",
-            border: "none",
-            background: "#22c55e",
-            color: "white",
-            fontSize: "18px",
-            fontWeight: "bold",
-            transition: "0.3s",
-          }}
-        >
-          Convert
-        </button>
+  className="convert-btn"
+  onClick={handleConvert}
+>
+  🚀 Convert Currency
+</button>
 
         <div
           style={{
@@ -265,61 +381,9 @@ const toInfo =
     justifyContent: "center",
   }}
 >
-  {/* FROM COUNTRY */}
-  <div
-    style={{
-      flex: "1",
-      minWidth: "220px",
-      background: "rgba(255,255,255,0.08)",
-      backdropFilter: "blur(12px)",
-      borderRadius: "15px",
-      padding: "20px",
-      border: "1px solid rgba(255,255,255,0.15)",
-      boxShadow: "0 6px 20px rgba(0,0,0,0.25)",
-    }}
-  >
-    <h2 style={{ textAlign: "center" }}>
-      {fromInfo.flag} {fromInfo.country}
-    </h2>
+  <CountryCard info={fromInfo} />
+<CountryCard info={toInfo} />
 
-    <p><strong>🏛 Capital:</strong> {fromInfo.capital}</p>
-
-    <p><strong>💵 Currency:</strong> {fromInfo.currency}</p>
-
-    <p><strong>💲 Symbol:</strong> {fromInfo.symbol}</p>
-
-    <p><strong>🏞 Landmark:</strong> {fromInfo.landmark}</p>
-
-    <p><strong>👤 Famous Person:</strong> {fromInfo.person}</p>
-  </div>
-
-  {/* TO COUNTRY */}
-  <div
-    style={{
-      flex: "1",
-      minWidth: "220px",
-      background: "rgba(255,255,255,0.08)",
-      backdropFilter: "blur(12px)",
-      borderRadius: "15px",
-      padding: "20px",
-      border: "1px solid rgba(255,255,255,0.15)",
-      boxShadow: "0 6px 20px rgba(0,0,0,0.25)",
-    }}
-  >
-    <h2 style={{ textAlign: "center" }}>
-      {toInfo.flag} {toInfo.country}
-    </h2>
-
-    <p><strong>🏛 Capital:</strong> {toInfo.capital}</p>
-
-    <p><strong>💵 Currency:</strong> {toInfo.currency}</p>
-
-    <p><strong>💲 Symbol:</strong> {toInfo.symbol}</p>
-
-    <p><strong>🏞 Landmark:</strong> {toInfo.landmark}</p>
-
-    <p><strong>👤 Famous Person:</strong> {toInfo.person}</p>
-  </div>
 </div>
         </div>
       </div>
